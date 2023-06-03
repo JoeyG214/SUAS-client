@@ -1,8 +1,10 @@
+import Header from "./components/Header"
+
 const App = () => {
   return (
-    <div>
-      App
-    </div>
+    <main className="flex flex-col w-screen h-screen bg-gray-900">
+      <Header />
+    </main>
   )
 }
 
