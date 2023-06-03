@@ -10,7 +10,7 @@ const Header = () => {
           alt="USF Logo"
         />
       </div>
-      <div className="text-white m-4 font-bold text-lg md:text-2xl lg:text-3xl">
+      <div className="text-white m-4 font-bold text-md md:text-2xl lg:text-3xl">
         Student Unmanned Aerial Systems
       </div>
     </header>
