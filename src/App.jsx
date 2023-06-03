@@ -1,11 +1,15 @@
 import Header from "./components/Header"
 import CaptureButton from "./components/CaptureButton"
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
-    <main className="flex flex-col w-screen h-screen bg-gray-900">
+    <main className="flex flex-col w-screen min-h-screen bg-gray-900">
       <Header />
-      <CaptureButton />
+      <section className="flex-grow">
+        <CaptureButton />
+      </section>
+      <Footer />
     </main>
   )
 }

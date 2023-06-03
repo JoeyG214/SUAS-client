@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        neonGreen: '#33ff99',
+        neonGreen: '#339933',
       },
       boxShadow: {
-        neon: '0 0 2.5px #33ff99, 0 0 5px #33ff99, 0 0 7.5px #33ff99, 0 0 10px #33ff99',
+        neon: '0 0 2.5px #339933, 0 0 5px #339933, 0 0 7.5px #339933, 0 0 10px #339933',
       }
     },
   },
