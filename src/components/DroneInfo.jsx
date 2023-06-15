@@ -5,6 +5,9 @@ const DroneInfo = () => {
         Drone Data
       </h2>
       <div className="text-white text-lg font-medium px-6 md:px-12">
+      <ul>
+        
+      </ul>
       </div>
     </section>
   )

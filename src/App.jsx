@@ -5,7 +5,7 @@ import DroneInfo from './components/DroneInfo'
 import CapturedImages from './components/CapturedImages'
 
 import { useState } from 'react'
-import imageDataService from './services/scripts/ImageData'
+import imageDataService from './services/ImageData'
 
 const App = () => {
   const [imageUrl, setImageUrl] = useState(null)
@@ -13,11 +13,10 @@ const App = () => {
 
   const fetchImage = async () => {
     try {
-      const image = imageDataService.capture()
-      const imageUrl = URL.createObjectURL(image)
-
-      setImageUrl(imageUrl)
-      setImagesUrls(imageUrls.concat(imageUrl))
+      const image = await imageDataService.capture()
+      const imageToUrl = URL.createObjectURL(image)
+      setImageUrl(imageToUrl)
+      setImageUrls(imageUrls.concat(imageUrl))
     } catch (error) {
       console.error(`Failed to fetch image: ${error}`)
     }
