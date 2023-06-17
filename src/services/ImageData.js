@@ -1,8 +1,12 @@
 import axios from 'axios'
 
-const baseUrl = '/api/scripts'
+const baseUrl = 'http://localhost:3001/api/scripts'
 
-export const capture = async () => {
+const capture = async () => {
   const res = await axios.get(`${baseUrl}/capture-image`)
   return res.data
+}
+
+export default {
+  capture
 }
