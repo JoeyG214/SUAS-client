@@ -1,11 +1,7 @@
-import React from 'react'
-
 const CapturedImage = ({ image }) => {
   return (
     <div>
-      <li>
-        <img src={image} alt="Py-Camera Capture" />
-      </li>
+      <img className='w-20 h-20' src={image} alt="Py-Camera Capture" />
     </div>
   )
 }

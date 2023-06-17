@@ -7,14 +7,12 @@ const CapturedImages = ({ images }) => {
         Captured Images
       </h2>
       <div>
-        <ul>
-          {images.forEach(image => {
-            <CapturedImage
-              key={img}
-              image={image}
-            />
-          })}
-        </ul>
+        {images.map(image => (
+          <CapturedImage
+            key={image}
+            image={image}
+          />
+        ))}
       </div>
     </section>
   )
