@@ -13,10 +13,10 @@ const App = () => {
 
   const fetchImage = async () => {
     try {
-      const image = await imageDataService.capture()
-      const imageToUrl = URL.createObjectURL(image)
-      setImageUrl(imageToUrl)
-      setImageUrls(imageUrls.concat(imageUrl))
+      const data = await imageDataService.capture()
+      const image = data.url
+      setImageUrl(image)
+      setImageUrls(imageUrls.concat(image))
     } catch (error) {
       console.error(`Failed to fetch image: ${error}`)
     }
